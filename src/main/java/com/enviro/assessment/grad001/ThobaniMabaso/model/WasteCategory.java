@@ -22,7 +22,7 @@ public class WasteCategory {
 
     private String description;
 
-    // Getters and setters
+
     public Long getId() {
         return id;
     }
