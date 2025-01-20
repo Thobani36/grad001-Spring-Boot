@@ -1,4 +1,6 @@
 package com.enviro.assessment.grad001.ThobaniMabaso;
 
-public class app {
+
+public class App {
+
 }
