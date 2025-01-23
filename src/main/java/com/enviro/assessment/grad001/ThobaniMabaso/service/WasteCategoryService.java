@@ -12,7 +12,7 @@ import java.util.Optional;
 public class WasteCategoryService {
 
     @Autowired
-    private WasteCategoryRepository wasteCategoryRepository;
+    WasteCategoryRepository wasteCategoryRepository;
 
     public List<WasteCategory> getAllCategories() {
         return wasteCategoryRepository.findAll();
