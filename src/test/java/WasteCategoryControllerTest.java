@@ -1,10 +1,6 @@
-
-
-import com.enviro.assessment.grad001.ThobaniMabaso.controller.WasteCategoryController;
 import com.enviro.assessment.grad001.ThobaniMabaso.model.WasteCategory;
 import com.enviro.assessment.grad001.ThobaniMabaso.service.WasteCategoryService;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
@@ -20,8 +16,6 @@ public class WasteCategoryControllerTest {
     @Mock
     private WasteCategoryService wasteCategoryService;
 
-    @InjectMocks
-    private WasteCategoryController wasteCategoryController;
 
     private MockMvc mockMvc;
 
