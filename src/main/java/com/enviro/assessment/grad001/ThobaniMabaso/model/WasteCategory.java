@@ -1,27 +1,22 @@
 package com.enviro.assessment.grad001.ThobaniMabaso.model;
 
-import jakarta.validation.constraints.NotEmpty;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "waste_categories")
 public class WasteCategory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotEmpty(message = "Category name cannot be empty")
-    @Size(max = 100, message = "Category name must be less than 100 characters")
     private String name;
 
     private String description;
-
 
     public Long getId() {
         return id;
